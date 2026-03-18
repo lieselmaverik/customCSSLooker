@@ -49,7 +49,7 @@
 th.headerCell {
   background-color: #C8102E;
   color: white;
-  padding: 6px 8px;
+  padding: 5px 8px;
   border: 1px solid #BDC3C7;
 }
 
@@ -73,12 +73,12 @@ th.headerCell {
   color: white;
 }
 
-/* Row cells with full grid lines */
+/* Row cells with tighter spacing */
 .rowCell {
-  vertical-align: super;
-  padding: 10px 8px;
-  border: 1px solid #E0E0E0; /* full grid (rows + columns) */
-  line-height: 1.5;
+  vertical-align: middle;
+  padding: 6px 8px; /* reduced spacing */
+  border: 1px solid #E0E0E0;
+  line-height: 1.25; /* tighter line height */
 }
 
 .rowCell.merged {
