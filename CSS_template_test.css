@@ -39,41 +39,28 @@
 }
 
 .reportTable {
-  color: #333333; /* darker gray */
+  color: #222222; /* darker gray */
   border-collapse: collapse;
-  border-spacing: 3px;
+  border-spacing: 0;
   table-layout: fixed;
 }
 
+/* Header styling with borders */
 th.headerCell {
   background-color: #C8102E;
   color: white;
-  padding: 5px;
-  border-bottom: 1px solid #BDC3C7;
+  padding: 6px 8px;
+  border: 1px solid #BDC3C7;
 }
 
-.headerCell.dimension {
-  background-color: #C8102E;
-  border-right: 1px solid #BDC3C7; 
-  color: white;
-}
-
+.headerCell.dimension,
 .headerCell.pivot {
-  background-color: #C8102E;
   border-right: 1px solid #BDC3C7; 
-  color: white;
 }
 
-.headerCell.measure {
-  background-color: #C8102E;
-  border-left: 1px solid #BDC3C7; 
-  color: white;
-}
-
+.headerCell.measure,
 .headerCell.measure.calculation {
-  background-color: #C8102E;
-  border-left: 1px solid #BDC3C7;
-  color: white;
+  border-left: 1px solid #BDC3C7; 
 }
 
 .headerCell.transposed.dimension {
@@ -86,24 +73,12 @@ th.headerCell {
   color: white;
 }
 
-/* .headerCell.dimension.headerRow {
-  background-color: #ccd8e4;
-  border-right: 1px solid #BDC3C7;
-}
-.headerCell.pivot.headerRow {
-  background-color: #ccd8e4;
-  border-right: 1px solid #BDC3C7;
-}
-.headerCell.measure.headerRow {
-  background-color: #ccd8e4;
-  border-left: 1px solid #BDC3C7;
-} */
-
+/* Row cells with full grid lines */
 .rowCell {
   vertical-align: super;
-  padding: 10px 5px; /* increased vertical spacing */
-  border-bottom: 1px solid #BDC3C7; 
-  line-height: 1.5; /* improved readability */
+  padding: 10px 8px;
+  border: 1px solid #E0E0E0; /* full grid (rows + columns) */
+  line-height: 1.5;
 }
 
 .rowCell.merged {
